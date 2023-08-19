@@ -1,0 +1,92 @@
+:root {
+  --main-color: rgba(214, 46, 51, 0.7);
+  --Pointer: pointer;
+  --Pos: center;
+}
+
+#home {
+  background-image: linear-gradient(var(--main-color), var(--main-color)),
+    url("../images/events-heavenly-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: var(--Pos);
+}
+/* ! side Navbar */
+#menus {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  bottom: 0;
+  width: 250px;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+.open {
+  left: 30px;
+  padding-left: 20px;
+  cursor: var(--Pointer);
+}
+li {
+  padding: 15px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 26px;
+  transition: color 0.7s;
+}
+#menus i {
+  color: #fff;
+  cursor: var(--Pointer);
+  transition: color 0.7s;
+}
+a:hover,
+#menus i:hover {
+  color: var(--main-color);
+}
+
+/* ? according section toggle */
+
+
+#slideDown h2 {
+  background-color: var(--main-color);
+  color: #fff;
+  cursor: var(--Pointer);
+}
+#slideDown p {
+  display: none;
+}
+#details {
+  background-image: linear-gradient(var(--main-color), var(--main-color)),
+    url(../images/invitation-2508607__340.jpg);
+  background-size: cover;
+}
+/* Contact section */
+#contact ul > li {
+  display: flex;
+  align-items: var(--Pos);
+  justify-content: var(--Pos);
+}
+#contact .social > span {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  display: grid;
+  place-items: var(--Pos);
+  transition: background-color 0.6s;
+}
+
+#contact .social > span:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  cursor: var(--Pointer);
+}
+@media all and (max-width: 775px) {
+  .open {
+    top: 30px;
+  }
+}
